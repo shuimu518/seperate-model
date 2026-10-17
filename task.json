@@ -1,0 +1,56 @@
+{
+  "version": "1.0",
+  "updated": "2026-10-17T22:36:00+08:00",
+  "conversations": [
+    {
+      "id": "conv_20261017_223232",
+      "from": "牛牛",
+      "to": "打工牛牛",
+      "subject": "法国自行式房车各系列销量调研",
+      "goal": "调研法国（France）自行式房车（Motorhome / Camping-car）市场 2024年及2025上半年各系列（product range / gamme）的销量数据。\n\n【调研内容】\n1. 市场总盘：法国自行式房车年销量（2024全年 + 2025上半年/前三季度），同比变化\n2. 按车身类型分：Camping-car profilé（半集成/低顶）、Capucine（凸顶/鹅头）、Intégral（一体式）、Fourgon/Fourgon aménagé（厢式改装）、Van\n3. 按品牌分：各主要品牌（Rapido、Hymer、Pilote、Chausson、Adria、Bürstner、Frankia、Dethleffs、Sunlight、Carado、Benimar、Challenger、Roller Team、McLouis、Etrusco、Weinsberg、Knaus Tabbert、Trigano系等）销量或市占率排行\n4. 按价格段/系列分：各品牌主力车系（如 Rapido 6系列/8系列、Pilote Pacific/G740、Chausson Welcome/Titanium 等）的销量结构\n5. 增速最快的细分（入门级/紧凑型/A级C级）\n\n【数据源要求】\n- 法国房车行业协会（UNIVDL / Fédération des Industries du Véhicule de Loisirs）\n- 欧洲房车协会 ECF（European Caravan Federation）年度统计\n- 法国 CCC（Camping-Car Magazine）、Le Monde du Camping-Car 等行业媒体\n- 品牌官方年报/新闻稿（Trigano SA 是上市公司，有财报）\n- 至少3个独立来源交叉验证\n\n【输出要求】\n直接在对话中输出 Markdown 格式文本，采用表格呈现，按以下结构：\n- 表1：法国自行式房车市场总量与同比\n- 表2：按车身类型（profilé/capucine/intégral/fourgon）销量与占比\n- 表3：品牌销量/市占率排行\n- 表4：主力车系销量结构\n- 结论：3-5条关键洞察\n\n【可信度标注规则】\n✅ 有权威源（协会/官方财报）\n⚠️ 多源不一致（列出各家数字）\n❓ 查不到（写❓，不许编造数字）\n\n【重要】\n- 法国市场数据要区分「法国市场销量」和「欧洲整体销量」，不要混淆\n- 查不到的数据标❓，绝不许编造\n- 数字必须带单位（辆 / %）",
+      "output_format": "md",
+      "deadline": "2026-10-18T02:32:32+08:00",
+      "priority": "P1",
+      "status": "open",
+      "created_at": "2026-10-17T22:32:32+08:00",
+      "updated_at": "2026-10-17T22:32:32+08:00",
+      "messages": [
+        {
+          "seq": 1,
+          "type": "task",
+          "from": "牛牛",
+          "body": "调研法国（France）自行式房车（Motorhome / Camping-car）市场 2024年及2025上半年各系列（product range / gamme）的销量数据。\n\n【调研内容】\n1. 市场总盘：法国自行式房车年销量（2024全年 + 2025上半年/前三季度），同比变化\n2. 按车身类型分：Camping-car profilé（半集成/低顶）、Capucine（凸顶/鹅头）、Intégral（一体式）、Fourgon/Fourgon aménagé（厢式改装）、Van\n3. 按品牌分：各主要品牌（Rapido、Hymer、Pilote、Chausson、Adria、Bürstner、Frankia、Dethleffs、Sunlight、Carado、Benimar、Challenger、Roller Team、McLouis、Etrusco、Weinsberg、Knaus Tabbert、Trigano系等）销量或市占率排行\n4. 按价格段/系列分：各品牌主力车系（如 Rapido 6系列/8系列、Pilote Pacific/G740、Chausson Welcome/Titanium 等）的销量结构\n5. 增速最快的细分（入门级/紧凑型/A级C级）\n\n【数据源要求】\n- 法国房车行业协会（UNIVDL / Fédération des Industries du Véhicule de Loisirs）\n- 欧洲房车协会 ECF（European Caravan Federation）年度统计\n- 法国 CCC（Camping-Car Magazine）、Le Monde du Camping-Car 等行业媒体\n- 品牌官方年报/新闻稿（Trigano SA 是上市公司，有财报）\n- 至少3个独立来源交叉验证\n\n【输出要求】\n直接在对话中输出 Markdown 格式文本，采用表格呈现，按以下结构：\n- 表1：法国自行式房车市场总量与同比\n- 表2：按车身类型（profilé/capucine/intégral/fourgon）销量与占比\n- 表3：品牌销量/市占率排行\n- 表4：主力车系销量结构\n- 结论：3-5条关键洞察\n\n【可信度标注规则】\n✅ 有权威源（协会/官方财报）\n⚠️ 多源不一致（列出各家数字）\n❓ 查不到（写❓，不许编造数字）\n\n【重要】\n- 法国市场数据要区分「法国市场销量」和「欧洲整体销量」，不要混淆\n- 查不到的数据标❓，绝不许编造\n- 数字必须带单位（辆 / %）",
+          "timestamp": "2026-10-17T22:32:32+08:00"
+        }
+      ],
+      "attachments": [],
+      "sources": []
+    },
+    {
+      "id": "off_20261017_223600",
+      "from": "牛牛",
+      "to": "打工牛牛",
+      "subject": "法国自行式房车各系列销量调研（线下派单）",
+      "goal": "【线下派单】调研法国（France）自行式房车（Motorhome / Camping-car）市场 2024年及2025上半年各系列（product range / gamme）的销量数据。\n\n【调研内容】\n1. 市场总盘：法国自行式房车年销量（2024全年 + 2025上半年/前三季度），同比变化\n2. 按车身类型分：Camping-car profilé（半集成/低顶）、Capucine（凸顶/鹅头）、Intégral（一体式）、Fourgon/Fourgon aménagé（厢式改装）、Van\n3. 按品牌分：Rapido、Hymer、Pilote、Chausson、Adria、Bürstner、Frankia、Dethleffs、Sunlight、Carado、Benimar、Challenger、Roller Team、McLouis、Etrusco、Weinsberg、Knaus Tabbert、Trigano系等销量或市占率排行\n4. 按价格段/系列分：各品牌主力车系（如 Rapido 6系列/8系列、Pilote Pacific/G740、Chausson Welcome/Titanium 等）的销量结构\n5. 增速最快的细分（入门级/紧凑型/A级C级）\n\n【数据源要求】\n- 法国房车行业协会（UNIVDL / Fédération des Industries du Véhicule de Loisirs）\n- 欧洲房车协会 ECF（European Caravan Federation）年度统计\n- 法国 CCC（Camping-Car Magazine）、Le Monde du Camping-Car 等行业媒体\n- 品牌官方年报/新闻稿（Trigano SA 是上市公司，有财报）\n- 至少3个独立来源交叉验证\n\n【输出要求】\n直接在对话中输出 Markdown 格式文本，采用表格呈现：\n- 表1：法国自行式房车市场总量与同比\n- 表2：按车身类型（profilé/capucine/intégral/fourgon）销量与占比\n- 表3：品牌销量/市占率排行\n- 表4：主力车系销量结构\n- 结论：3-5条关键洞察\n\n【可信度标注规则】\n✅ 有权威源（协会/官方财报）\n⚠️ 多源不一致（列出各家数字）\n❓ 查不到（写❓，不许编造数字）\n\n【重要】\n- 区分「法国市场销量」和「欧洲整体销量」，不要混淆\n- 查不到的数据标❓，绝不许编造\n- 数字必须带单位（辆 / %）",
+      "output_format": "md",
+      "deadline": "2026-10-18T02:36:00+08:00",
+      "priority": "P1",
+      "status": "open",
+      "mode": "offline",
+      "created_at": "2026-10-17T22:36:00+08:00",
+      "updated_at": "2026-10-17T22:36:00+08:00",
+      "messages": [
+        {
+          "seq": 1,
+          "type": "task",
+          "from": "牛牛",
+          "body": "【线下派单】调研法国（France）自行式房车（Motorhome / Camping-car）市场 2024年及2025上半年各系列（product range / gamme）的销量数据。\n\n【调研内容】\n1. 市场总盘：法国自行式房车年销量（2024全年 + 2025上半年/前三季度），同比变化\n2. 按车身类型分：Camping-car profilé（半集成/低顶）、Capucine（凸顶/鹅头）、Intégral（一体式）、Fourgon/Fourgon aménagé（厢式改装）、Van\n3. 按品牌分：Rapido、Hymer、Pilote、Chausson、Adria、Bürstner、Frankia、Dethleffs、Sunlight、Carado、Benimar、Challenger、Roller Team、McLouis、Etrusco、Weinsberg、Knaus Tabbert、Trigano系等销量或市占率排行\n4. 按价格段/系列分：各品牌主力车系（如 Rapido 6系列/8系列、Pilote Pacific/G740、Chausson Welcome/Titanium 等）的销量结构\n5. 增速最快的细分（入门级/紧凑型/A级C级）\n\n【数据源要求】\n- 法国房车行业协会（UNIVDL / Fédération des Industries du Véhicule de Loisirs）\n- 欧洲房车协会 ECF（European Caravan Federation）年度统计\n- 法国 CCC（Camping-Car Magazine）、Le Monde du Camping-Car 等行业媒体\n- 品牌官方年报/新闻稿（Trigano SA 是上市公司，有财报）\n- 至少3个独立来源交叉验证\n\n【输出要求】\n直接在对话中输出 Markdown 格式文本，采用表格呈现：\n- 表1：法国自行式房车市场总量与同比\n- 表2：按车身类型（profilé/capucine/intégral/fourgon）销量与占比\n- 表3：品牌销量/市占率排行\n- 表4：主力车系销量结构\n- 结论：3-5条关键洞察\n\n【可信度标注规则】\n✅ 有权威源（协会/官方财报）\n⚠️ 多源不一致（列出各家数字）\n❓ 查不到（写❓，不许编造数字）\n\n【重要】\n- 区分「法国市场销量」和「欧洲整体销量」，不要混淆\n- 查不到的数据标❓，绝不许编造\n- 数字必须带单位（辆 / %）",
+          "timestamp": "2026-10-17T22:36:00+08:00"
+        }
+      ],
+      "attachments": [],
+      "sources": []
+    }
+  ],
+  "messages": []
+}
