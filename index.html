@@ -1,0 +1,169 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>独立模型协同通道 · 全量存档（seperate_model）</title>
+<style>
+:root{--bg:#0f1724;--card:#17243a;--line:#26364f;--txt:#e6edf7;--mut:#8fa3bf;--acc:#4ea1ff;--ok:#3ec98a;--warn:#f0b429;--bad:#e5534b}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);font:15px/1.7 "Microsoft YaHei",system-ui,sans-serif;padding:28px 20px 60px}
+.wrap{max-width:1080px;margin:0 auto}
+h1{font-size:26px;margin:0 0 6px;color:#fff}
+h2{font-size:19px;margin:34px 0 12px;padding-left:10px;border-left:4px solid var(--acc)}
+h3{font-size:16px;margin:20px 0 8px;color:#cfe0f7}
+.sub{color:var(--mut);font-size:13px;margin-bottom:22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:12px 0}
+table{width:100%;border-collapse:collapse;margin:10px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:#1d2c45;color:#bcd3f0;font-weight:600;white-space:nowrap}
+tr:nth-child(even) td{background:#152136}
+code{background:#0b1220;padding:1px 5px;border-radius:4px;font-size:13px;color:#9fd0ff;word-break:break-all}
+.ok{color:var(--ok)}.warn{color:var(--warn)}.bad{color:var(--bad)}
+ul{margin:8px 0;padding-left:22px}
+li{margin:4px 0}
+hr{border:0;border-top:1px solid var(--line);margin:26px 0}
+.foot{color:var(--mut);font-size:12px;margin-top:34px}
+</style></head><body><div class="wrap">
+<h1>独立模型协同通道 · 全量存档</h1>
+<div class="sub">seperate_model 通道 | 生成时间 2026-10-17 20:18 | 数据源：seperate_model.db + seperate_model.json + 工作区文件 | 已脱敏</div>
+<h2>一、通道定位</h2>
+<div class="card">本通道用于给<b>网页版大模型</b>派活，零脚本依赖，三文件模型。接单方用真实智能体名：<code>打工牛牛</code>（DeepSeek 网页端）、<code>扣普达</code>（Claude 网页端）。</div>
+<table><tr><th>文件</th><th>路径</th><th>用途</th></tr><tr><td>活文件 JSON</td><td><code>AgentCollaboration\.SeperateModel\seperate_model.json</code></td><td>当前进行中的会话</td></tr><tr><td>归档 DB</td><td><code>AgentCollaboration\.SeperateModel\seperate_model.db</code></td><td>所有历史会话（SQLite）</td></tr><tr><td>部署说明</td><td><code>AgentCollaboration\.SeperateModel\deploy_description.md</code></td><td>通道操作说明</td></tr><tr><td>工作区</td><td><code>AgentCollaboration\SeperateModel工作区\YYYY-MM\</code></td><td>交付物 md 存档</td></tr><tr><td>SOP</td><td><code>workspace\main\plugs\plug-seperate-model\SKILL.md</code></td><td>v1.6 操作规范</td></tr></table>
+<h2>二、当前统计</h2>
+<table><tr><th>指标</th><th>数值</th><th>状态</th></tr>
+<tr><td>DB 会话数</td><td>3</td><td class="ok">✅</td></tr>
+<tr><td>DB 消息数</td><td>4</td><td class="ok">✅</td></tr>
+<tr><td>DB 附件数</td><td>4</td><td class="ok">✅</td></tr>
+<tr><td>DB 来源数</td><td>15</td><td class="ok">✅</td></tr>
+<tr><td>JSON 进行中会话</td><td>0</td><td class="ok">✅ 已清空</td></tr>
+<tr><td>工作区 md 文件</td><td>11</td><td class="warn">⚠️ 有 8 份未入库</td></tr>
+</table>
+<div class="card"><b class="warn">⚠️ 未入库交付物（磁盘有、DB 无记录）</b><ul>
+<li><code>Knaus_Tabbert与Hobby销量数据深挖_打工牛牛_20261014_main.md</code></li>
+<li><code>中国自行式房车2024-2025销量调研_打工牛牛_20261015_main.md</code></li>
+<li><code>中欧美及全球房车企业前十排名调研_打工牛牛_20261014_main.md</code></li>
+<li><code>房车全球Top10榜单补充研判_打工牛牛_20261014_main.md</code></li>
+<li><code>杭州周末天气预报简报_扣普达_20261014_main.md</code></li>
+<li><code>欧洲房车销量整合报告_20261014_final.md</code></li>
+<li><code>欧洲拖挂式房车客户群体画像_打工牛牛助手_20261015_main.md</code></li>
+<li><code>荷兰拖挂房车细分类型深挖简报_扣普达_20261014_main.md</code></li>
+</ul></div>
+<h2>三、会话明细（全量）</h2>
+<h3>国内拖挂房车ABCD类销量数据调研</h3>
+<div class="card"><table>
+<tr><th style="width:130px">会话ID</th><td><code>conv_20261015_144901</code></td></tr>
+<tr><th>派单方 → 接单方</th><td>打工牛牛的助手 → <b>扣普达</b></td></tr>
+<tr><th>状态</th><td class="ok">done</td></tr>
+<tr><th>优先级 / 格式</th><td>P1 / md</td></tr>
+<tr><th>创建 / 更新</th><td>2026-10-15T14:49:01+08:00 / 2026-10-15T15:34:32.286764+08:00</td></tr>
+<tr><th>截止</th><td>2026-10-15T17:00:00+08:00</td></tr>
+</table>
+<div style="margin-top:10px"><b>任务要求</b><pre style="white-space:pre-wrap;background:#0b1220;border-radius:6px;padding:10px;font-size:13px;margin:6px 0">调研中国国内拖挂式房车按A/B/C/D分类的销量数据</pre></div>
+<table><tr><th style="width:60px">序号</th><th style="width:110px">类型</th><th style="width:120px">来自</th><th>内容</th><th style="width:150px">时间</th></tr>
+<tr><td>1</td><td>task</td><td>打工牛牛的助手</td><td>请完成国内拖挂房车ABCD类销量数据调研，按要求输出Markdown报告。</td><td>2026-10-15T14:49:01+08:00</td></tr>
+<tr><td>2</td><td>result</td><td>扣普达</td><td>调研完成，输出两份报告：①国内拖挂ABCD分类对照+销量数据 ②国外拖挂品类与国内国标对应关系</td><td>2026-10-15T15:34:32.286764+08:00</td></tr>
+</table>
+<b>附件</b><table><tr><th>路径</th><th>类型</th><th>存在</th></tr>
+<tr><td><code>D:\GEO文件夹\GEO文件夹\AgentCollaboration\SeperateModel工作区\2026-10\国内拖挂房车ABCD类销量数据调研_扣普达_20261015_main.md</code></td><td>md</td><td class="ok">✅</td></tr>
+<tr><td><code>D:\GEO文件夹\GEO文件夹\AgentCollaboration\SeperateModel工作区\2026-10\国外拖挂品类与国内国标对应关系_扣普达_20261015_main.md</code></td><td>md</td><td class="ok">✅</td></tr>
+</table>
+<b>数据来源</b><table><tr><th>名称</th><th>URL</th></tr>
+<tr><td>路程网房车行</td><td><code></code></td></tr>
+<tr><td>21世纪房车网</td><td><code></code></td></tr>
+<tr><td>中国汽车工业协会房车分会</td><td><code></code></td></tr>
+<tr><td>工信部道路机动车辆生产企业及产品公告</td><td><code></code></td></tr>
+<tr><td>有驾</td><td><code></code></td></tr>
+<tr><td>房车时代</td><td><code></code></td></tr>
+<tr><td>博研咨询</td><td><code></code></td></tr>
+</table>
+</div>
+<h3>欧洲市场主要品牌2025年房车销量数据调研</h3>
+<div class="card"><table>
+<tr><th style="width:130px">会话ID</th><td><code>conv_20261015_185100</code></td></tr>
+<tr><th>派单方 → 接单方</th><td>牛牛 → <b>打工牛牛</b></td></tr>
+<tr><th>状态</th><td class="ok">done</td></tr>
+<tr><th>优先级 / 格式</th><td>normal / 欧洲市场主要品牌2025年房车销量数据调研_打工牛牛_20261015_main.md</td></tr>
+<tr><th>创建 / 更新</th><td>2026-10-15T18:51:00+08:00 / 2026-10-15T19:02:00+08:00</td></tr>
+<tr><th>截止</th><td>2026-10-16T00:00:00+08:00</td></tr>
+</table>
+<div style="margin-top:10px"><b>任务要求</b><pre style="white-space:pre-wrap;background:#0b1220;border-radius:6px;padding:10px;font-size:13px;margin:6px 0">收集欧洲市场2025年主要房车品牌销量数据，覆盖自行式与拖挂式。优先找ECF、行业协会、厂商年报、经销商统计、行业媒体等可核查来源。按品牌/公司拆分，输出Markdown简报，包含：1) 市场总量；2) 自行式品牌Top榜；3) 拖挂式品牌Top榜；4) 分国别/区域补充；5) 数据来源链接；6) 可信度标注；7) 未核实项明确标?。不要编造数据。</pre></div>
+<table><tr><th style="width:60px">序号</th><th style="width:110px">类型</th><th style="width:120px">来自</th><th>内容</th><th style="width:150px">时间</th></tr>
+<tr><td>1</td><td>assistant</td><td>打工牛牛</td><td># 欧洲房车市场2025年主要品牌销量数据调研简报
+
+## 1. 市场总量：欧洲房车市场（ECF/CIVD口径）
+
+2025年欧洲休闲车（Leisure Vehicles）总注册量 **约215,000辆**，同比下降 **2.6%**，连续第八年超过20万辆大关。
+
+| 品类 | 2025年注册量 | 同比 | 趋势 |
+|---|---|---|---|
+| **自行式房车（Motor Caravans）** | **约161,000辆** | **+0.6%** | 市场“稳定器”，逆势微增 |
+| **拖挂式房车（Caravans）** | **约54,200辆** | **-11%** | 持续萎缩，结构性转移明显 |
+
+**分国别数据（2025年全年）**：
+
+| 国家 | 自行式 | 拖挂式 | 总量 | 备注 |
+|---|---|---|---|---|
+| **德国** | 75,368辆（+0.9%） | 18,766辆（-13.4%） | 94,134辆 | 欧洲最大市场，遥遥领先 |
+| **法国** | 26,335辆（-0.2%） | — | 33,504…（完整内容见附件）</td><td>2026-10-15T19:02:00+08:00</td></tr>
+</table>
+<b>附件</b><table><tr><th>路径</th><th>类型</th><th>存在</th></tr>
+<tr><td><code>D:\GEO文件夹\GEO文件夹\AgentCollaboration\AgentCollaboration工作区\2026-10\欧洲市场主要品牌2025年房车销量数据调研_打工牛牛_20261015_main.md</code></td><td>markdown</td><td class="ok">✅</td></tr>
+</table>
+<b>数据来源</b><table><tr><th>名称</th><th>URL</th></tr>
+<tr><td>CIVD 2026年1月年度新闻发布会</td><td><code>https://www.civd.de/en/news/01-2026-new-registrations/</code></td></tr>
+<tr><td>EHG FY2024/25官方新闻</td><td><code>https://www.erwinhymergroup.com/en/press/~p~3601842</code></td></tr>
+<tr><td>Trigano FY2024/25财报</td><td><code>https://trigano-finance.com/wp-content/uploads/2025/09/TRIGANO_CA_2025_en-_-2025.09.2025.pdf</code></td></tr>
+<tr><td>EHG新品牌Corigon</td><td><code>https://www.erwinhymergroup.com/en/press/~p~3542225</code></td></tr>
+</table>
+</div>
+<h3>杭州2026-10-18天气调研（语言模型打磨·首轮）</h3>
+<div class="card"><table>
+<tr><th style="width:130px">会话ID</th><td><code>conv_20261017_194602</code></td></tr>
+<tr><th>派单方 → 接单方</th><td>牛牛 → <b>打工牛牛</b></td></tr>
+<tr><th>状态</th><td class="ok">done</td></tr>
+<tr><th>优先级 / 格式</th><td>P1 / md</td></tr>
+<tr><th>创建 / 更新</th><td>2026-10-17T19:46:02+08:00 / 2026-10-17T20:09:40+08:00</td></tr>
+<tr><th>截止</th><td>2026-10-17T21:46:02+08:00</td></tr>
+</table>
+<div style="margin-top:10px"><b>任务要求</b><pre style="white-space:pre-wrap;background:#0b1220;border-radius:6px;padding:10px;font-size:13px;margin:6px 0">【任务】调研杭州 2026-10-18（明天，周日）全天天气情况
+【数据源要求】中国天气网(weather.com.cn) / 中央气象台(nmc.cn) / 浙江省气象台，至少2个权威源交叉验证；禁止用无出处聚合站
+【必须给出】①天气现象 ②气温区间(最高/最低) ③降水概率与降水量 ④风力风向 ⑤空气质量/湿度 ⑥逐时段(早/午/晚)变化 ⑦出行提示
+【可信度标注】每条数据后标 ✅有权威源 / ⚠️多源不一致 / ❓查不到，末尾附来源URL清单
+【输出格式】Markdown，表格优先（数据表格化），文末单列&quot;数据来源&quot;章节
+【铁律】查不到就写❓，不许编数字；气温单位℃、时间用北京时间</pre></div>
+<table><tr><th style="width:60px">序号</th><th style="width:110px">类型</th><th style="width:120px">来自</th><th>内容</th><th style="width:150px">时间</th></tr>
+<tr><td>2</td><td>reply</td><td>打工牛牛</td><td>杭州2026-10-18天气调研（原始回复见附件）D:\GEO文件夹\GEO文件夹\AgentCollaboration\SeperateModel工作区\2026-10\杭州天气_20261018_deepseek_20261017_main.md</td><td>2026-10-17T20:09:40+08:00</td></tr>
+</table>
+<b>附件</b><table><tr><th>路径</th><th>类型</th><th>存在</th></tr>
+<tr><td><code>D:\GEO文件夹\GEO文件夹\AgentCollaboration\SeperateModel工作区\2026-10\杭州天气_20261018_打工牛牛_20261017_main.md</code></td><td>md</td><td class="ok">✅</td></tr>
+</table>
+<b>数据来源</b><table><tr><th>名称</th><th>URL</th></tr>
+<tr><td>中国天气网（杭州）</td><td><code>https://www.weather.com.cn/weather/101210101.shtml</code></td></tr>
+<tr><td>中央气象台（杭州）</td><td><code>https://www.nmc.cn/publish/forecast/AZJ/hangzhou.html</code></td></tr>
+<tr><td>和风天气（非指定源）</td><td><code>https://www.qweather.com/weather/hangzhou-101210101.html</code></td></tr>
+<tr><td>浙江天气相关报道</td><td><code>https://news.qq.com/rain/a/20261016A00QYW00</code></td></tr>
+</table>
+</div>
+<h2>四、工作区文件清单</h2>
+<table><tr><th>文件名</th><th>大小(字节)</th><th>入库</th></tr>
+<tr><td><code>Knaus_Tabbert与Hobby销量数据深挖_打工牛牛_20261014_main.md</code></td><td>3623</td><td class="warn">⚠️ 未入库</td></tr>
+<tr><td><code>中国自行式房车2024-2025销量调研_打工牛牛_20261015_main.md</code></td><td>7124</td><td class="warn">⚠️ 未入库</td></tr>
+<tr><td><code>中欧美及全球房车企业前十排名调研_打工牛牛_20261014_main.md</code></td><td>8083</td><td class="warn">⚠️ 未入库</td></tr>
+<tr><td><code>国内拖挂房车ABCD类销量数据调研_扣普达_20261015_main.md</code></td><td>3105</td><td class="ok">✅</td></tr>
+<tr><td><code>国外拖挂品类与国内国标对应关系_扣普达_20261015_main.md</code></td><td>4348</td><td class="ok">✅</td></tr>
+<tr><td><code>房车全球Top10榜单补充研判_打工牛牛_20261014_main.md</code></td><td>5623</td><td class="warn">⚠️ 未入库</td></tr>
+<tr><td><code>杭州周末天气预报简报_扣普达_20261014_main.md</code></td><td>2728</td><td class="warn">⚠️ 未入库</td></tr>
+<tr><td><code>杭州天气_20261018_打工牛牛_20261017_main.md</code></td><td>4963</td><td class="ok">✅</td></tr>
+<tr><td><code>欧洲房车销量整合报告_20261014_final.md</code></td><td>7576</td><td class="warn">⚠️ 未入库</td></tr>
+<tr><td><code>欧洲拖挂式房车客户群体画像_打工牛牛助手_20261015_main.md</code></td><td>3552</td><td class="warn">⚠️ 未入库</td></tr>
+<tr><td><code>荷兰拖挂房车细分类型深挖简报_扣普达_20261014_main.md</code></td><td>12455</td><td class="warn">⚠️ 未入库</td></tr>
+</table>
+<h2>五、铁律（v1.6）</h2>
+<div class="card"><ul>
+<li><b>称呼用真实智能体名</b>：<code>打工牛牛</code> / <code>扣普达</code>，绝不写 <code>deepseek网页版</code>、<code>Claude网页版</code></li>
+<li><b>归档三件套同轮完成</b>：存 md + DB INSERT + 清空 JSON，缺一不可</li>
+<li><b>派活前先归档上一轮</b></li>
+<li><b>接单方回复完整落盘</b>，可信度标注 ✅/⚠️/❓ 原样保留</li>
+<li><b>工作区文件数 == attachments 表条数</b>，不符即归档断档</li>
+<li><b>查不到就写 ❓，不许编数字</b></li>
+</ul></div>
+<div class="foot">打工牛牛 · 自动生成 2026-10-17 20:18 · 数据源 seperate_model.db · 已脱敏处理</div>
+</div></body></html>
