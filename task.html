@@ -1,0 +1,98 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>任务派单 seperate_model.json</title>
+<style>
+body{margin:0;background:#0f1724;color:#e6edf7;font:15px/1.75 "Microsoft YaHei",system-ui,sans-serif;padding:24px 18px 60px}
+.wrap{max-width:1000px;margin:0 auto}
+h1{font-size:22px;margin:0 0 4px;color:#fff}
+h2{font-size:17px;margin:26px 0 10px;padding-left:9px;border-left:4px solid #4ea1ff}
+.sub{color:#8fa3bf;font-size:13px;margin-bottom:18px}
+table{width:100%;border-collapse:collapse;margin:8px 0;font-size:14px}
+th,td{border:1px solid #26364f;padding:8px 10px;text-align:left;vertical-align:top}
+th{background:#1d2c45;color:#bcd3f0;white-space:nowrap;width:120px}
+td{background:#152136}
+pre{background:#0b1220;border:1px solid #26364f;border-radius:8px;padding:14px;overflow-x:auto;
+    white-space:pre-wrap;word-break:break-word;font:13px/1.65 Consolas,"Courier New",monospace;color:#9fd0ff}
+code{background:#0b1220;padding:1px 5px;border-radius:4px;font-size:13px;color:#9fd0ff}
+.foot{color:#8fa3bf;font-size:12px;margin-top:26px}
+</style></head><body><div class="wrap">
+<h1>任务派单 · seperate_model.json</h1>
+<div class="sub">更新时间 2026-10-17T22:32:32+08:00 · 进行中会话 1 个 · 生成 2026-10-17 22:32</div>
+<h2>任务 1：法国自行式房车各系列销量调研</h2><table>
+<tr><th>id</th><td><code>conv_20261017_223232</code></td></tr>
+<tr><th>派单方 from</th><td><b>牛牛</b></td></tr>
+<tr><th>接单方 to</th><td><b>打工牛牛</b></td></tr>
+<tr><th>主题 subject</th><td>法国自行式房车各系列销量调研</td></tr>
+<tr><th>优先级 priority</th><td>P1</td></tr>
+<tr><th>截止 deadline</th><td>2026-10-18T02:32:32+08:00</td></tr>
+<tr><th>输出格式</th><td>md</td></tr>
+<tr><th>状态 status</th><td>open</td></tr>
+<tr><th>创建 created_at</th><td>2026-10-17T22:32:32+08:00</td></tr>
+</table>
+<h2 style="border-left-color:#3ec98a">任务要求 goal</h2>
+<pre>调研法国（France）自行式房车（Motorhome / Camping-car）市场 2024年及2025上半年各系列（product range / gamme）的销量数据。
+
+【调研内容】
+1. 市场总盘：法国自行式房车年销量（2024全年 + 2025上半年/前三季度），同比变化
+2. 按车身类型分：Camping-car profilé（半集成/低顶）、Capucine（凸顶/鹅头）、Intégral（一体式）、Fourgon/Fourgon aménagé（厢式改装）、Van
+3. 按品牌分：各主要品牌（Rapido、Hymer、Pilote、Chausson、Adria、Bürstner、Frankia、Dethleffs、Sunlight、Carado、Benimar、Challenger、Roller Team、McLouis、Etrusco、Weinsberg、Knaus Tabbert、Trigano系等）销量或市占率排行
+4. 按价格段/系列分：各品牌主力车系（如 Rapido 6系列/8系列、Pilote Pacific/G740、Chausson Welcome/Titanium 等）的销量结构
+5. 增速最快的细分（入门级/紧凑型/A级C级）
+
+【数据源要求】
+- 法国房车行业协会（UNIVDL / Fédération des Industries du Véhicule de Loisirs）
+- 欧洲房车协会 ECF（European Caravan Federation）年度统计
+- 法国 CCC（Camping-Car Magazine）、Le Monde du Camping-Car 等行业媒体
+- 品牌官方年报/新闻稿（Trigano SA 是上市公司，有财报）
+- 至少3个独立来源交叉验证
+
+【输出要求】
+直接在对话中输出 Markdown 格式文本，采用表格呈现，按以下结构：
+- 表1：法国自行式房车市场总量与同比
+- 表2：按车身类型（profilé/capucine/intégral/fourgon）销量与占比
+- 表3：品牌销量/市占率排行
+- 表4：主力车系销量结构
+- 结论：3-5条关键洞察
+
+【可信度标注规则】
+✅ 有权威源（协会/官方财报）
+⚠️ 多源不一致（列出各家数字）
+❓ 查不到（写❓，不许编造数字）
+
+【重要】
+- 法国市场数据要区分「法国市场销量」和「欧洲整体销量」，不要混淆
+- 查不到的数据标❓，绝不许编造
+- 数字必须带单位（辆 / %）</pre>
+<h2 style="border-left-color:#f0b429">原始 JSON</h2>
+<pre>{
+  &quot;version&quot;: &quot;1.0&quot;,
+  &quot;updated&quot;: &quot;2026-10-17T22:32:32+08:00&quot;,
+  &quot;conversations&quot;: [
+    {
+      &quot;id&quot;: &quot;conv_20261017_223232&quot;,
+      &quot;from&quot;: &quot;牛牛&quot;,
+      &quot;to&quot;: &quot;打工牛牛&quot;,
+      &quot;subject&quot;: &quot;法国自行式房车各系列销量调研&quot;,
+      &quot;goal&quot;: &quot;调研法国（France）自行式房车（Motorhome / Camping-car）市场 2024年及2025上半年各系列（product range / gamme）的销量数据。\n\n【调研内容】\n1. 市场总盘：法国自行式房车年销量（2024全年 + 2025上半年/前三季度），同比变化\n2. 按车身类型分：Camping-car profilé（半集成/低顶）、Capucine（凸顶/鹅头）、Intégral（一体式）、Fourgon/Fourgon aménagé（厢式改装）、Van\n3. 按品牌分：各主要品牌（Rapido、Hymer、Pilote、Chausson、Adria、Bürstner、Frankia、Dethleffs、Sunlight、Carado、Benimar、Challenger、Roller Team、McLouis、Etrusco、Weinsberg、Knaus Tabbert、Trigano系等）销量或市占率排行\n4. 按价格段/系列分：各品牌主力车系（如 Rapido 6系列/8系列、Pilote Pacific/G740、Chausson Welcome/Titanium 等）的销量结构\n5. 增速最快的细分（入门级/紧凑型/A级C级）\n\n【数据源要求】\n- 法国房车行业协会（UNIVDL / Fédération des Industries du Véhicule de Loisirs）\n- 欧洲房车协会 ECF（European Caravan Federation）年度统计\n- 法国 CCC（Camping-Car Magazine）、Le Monde du Camping-Car 等行业媒体\n- 品牌官方年报/新闻稿（Trigano SA 是上市公司，有财报）\n- 至少3个独立来源交叉验证\n\n【输出要求】\n直接在对话中输出 Markdown 格式文本，采用表格呈现，按以下结构：\n- 表1：法国自行式房车市场总量与同比\n- 表2：按车身类型（profilé/capucine/intégral/fourgon）销量与占比\n- 表3：品牌销量/市占率排行\n- 表4：主力车系销量结构\n- 结论：3-5条关键洞察\n\n【可信度标注规则】\n✅ 有权威源（协会/官方财报）\n⚠️ 多源不一致（列出各家数字）\n❓ 查不到（写❓，不许编造数字）\n\n【重要】\n- 法国市场数据要区分「法国市场销量」和「欧洲整体销量」，不要混淆\n- 查不到的数据标❓，绝不许编造\n- 数字必须带单位（辆 / %）&quot;,
+      &quot;output_format&quot;: &quot;md&quot;,
+      &quot;deadline&quot;: &quot;2026-10-18T02:32:32+08:00&quot;,
+      &quot;priority&quot;: &quot;P1&quot;,
+      &quot;status&quot;: &quot;open&quot;,
+      &quot;created_at&quot;: &quot;2026-10-17T22:32:32+08:00&quot;,
+      &quot;updated_at&quot;: &quot;2026-10-17T22:32:32+08:00&quot;,
+      &quot;messages&quot;: [
+        {
+          &quot;seq&quot;: 1,
+          &quot;type&quot;: &quot;task&quot;,
+          &quot;from&quot;: &quot;牛牛&quot;,
+          &quot;body&quot;: &quot;调研法国（France）自行式房车（Motorhome / Camping-car）市场 2024年及2025上半年各系列（product range / gamme）的销量数据。\n\n【调研内容】\n1. 市场总盘：法国自行式房车年销量（2024全年 + 2025上半年/前三季度），同比变化\n2. 按车身类型分：Camping-car profilé（半集成/低顶）、Capucine（凸顶/鹅头）、Intégral（一体式）、Fourgon/Fourgon aménagé（厢式改装）、Van\n3. 按品牌分：各主要品牌（Rapido、Hymer、Pilote、Chausson、Adria、Bürstner、Frankia、Dethleffs、Sunlight、Carado、Benimar、Challenger、Roller Team、McLouis、Etrusco、Weinsberg、Knaus Tabbert、Trigano系等）销量或市占率排行\n4. 按价格段/系列分：各品牌主力车系（如 Rapido 6系列/8系列、Pilote Pacific/G740、Chausson Welcome/Titanium 等）的销量结构\n5. 增速最快的细分（入门级/紧凑型/A级C级）\n\n【数据源要求】\n- 法国房车行业协会（UNIVDL / Fédération des Industries du Véhicule de Loisirs）\n- 欧洲房车协会 ECF（European Caravan Federation）年度统计\n- 法国 CCC（Camping-Car Magazine）、Le Monde du Camping-Car 等行业媒体\n- 品牌官方年报/新闻稿（Trigano SA 是上市公司，有财报）\n- 至少3个独立来源交叉验证\n\n【输出要求】\n直接在对话中输出 Markdown 格式文本，采用表格呈现，按以下结构：\n- 表1：法国自行式房车市场总量与同比\n- 表2：按车身类型（profilé/capucine/intégral/fourgon）销量与占比\n- 表3：品牌销量/市占率排行\n- 表4：主力车系销量结构\n- 结论：3-5条关键洞察\n\n【可信度标注规则】\n✅ 有权威源（协会/官方财报）\n⚠️ 多源不一致（列出各家数字）\n❓ 查不到（写❓，不许编造数字）\n\n【重要】\n- 法国市场数据要区分「法国市场销量」和「欧洲整体销量」，不要混淆\n- 查不到的数据标❓，绝不许编造\n- 数字必须带单位（辆 / %）&quot;,
+          &quot;timestamp&quot;: &quot;2026-10-17T22:32:32+08:00&quot;
+        }
+      ],
+      &quot;attachments&quot;: [],
+      &quot;sources&quot;: []
+    }
+  ],
+  &quot;messages&quot;: []
+}</pre>
+<div class="foot">打工牛牛 · 2026-10-17 22:32 · 仅含派单 JSON，不含归档明细</div></div></body></html>
