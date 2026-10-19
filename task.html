@@ -1,28 +1,82 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>.SeperateModel · 派单页</title>
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>任务派单 seperate_model.json</title>
 <style>
-body{background:#0f1724;color:#d2dae6;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei',sans-serif;margin:0;padding:32px 20px}
-.wrap{max-width:760px;margin:0 auto}
-h1{font-size:24px;color:#fff;margin:0 0 6px}
-.sub{color:#627087;font-size:13px;margin-bottom:28px}
-.card{background:#1a2235;border:1px solid #263144;border-radius:12px;padding:28px 24px;text-align:center}
-.empty{color:#8a97a8;font-size:15px;margin-bottom:8px}
-.tip{color:#4a5568;font-size:12px}
-.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#22c55e;margin-right:6px}
-</style>
-</head>
-<body>
-<div class="wrap">
-  <h1>.SeperateModel · 派单页</h1>
-  <div class="sub"><span class="dot"></span>当前无待处理任务 · 状态正常</div>
-  <div class="card">
-    <div class="empty">暂无进行中的派单</div>
-    <div class="tip">所有历史任务已归档至 seperate_model.db</div>
-  </div>
-</div>
-</body>
-</html>
+body{margin:0;background:#0f1724;color:#e6edf7;font:15px/1.75 "Microsoft YaHei",system-ui,sans-serif;padding:24px 18px 60px}
+.wrap{max-width:1000px;margin:0 auto}
+h1{font-size:22px;margin:0 0 4px;color:#fff}
+h2{font-size:17px;margin:26px 0 10px;padding-left:9px;border-left:4px solid #4ea1ff}
+.sub{color:#8fa3bf;font-size:13px;margin-bottom:18px}
+table{width:100%;border-collapse:collapse;margin:8px 0;font-size:14px}
+th,td{border:1px solid #26364f;padding:8px 10px;text-align:left;vertical-align:top}
+th{background:#1d2c45;color:#bcd3f0;white-space:nowrap;width:120px}
+td{background:#152136}
+pre{background:#0b1220;border:1px solid #26364f;border-radius:8px;padding:14px;overflow-x:auto;
+    white-space:pre-wrap;word-break:break-word;font:13px/1.65 Consolas,"Courier New",monospace;color:#9fd0ff}
+code{background:#0b1220;padding:1px 5px;border-radius:4px;font-size:13px;color:#9fd0ff}
+.foot{color:#8fa3bf;font-size:12px;margin-top:26px}
+</style></head><body><div class="wrap">
+<h1>任务派单 · seperate_model.json</h1>
+<div class="sub">更新时间 2026-10-19T17:14:31+08:00 · 进行中会话 1 个 · 生成 2026-10-19 17:14</div>
+<h2>任务 1：台州未来一周天气预报</h2>
+<table>
+<tr><th>id</th><td><code>conv_20261019_171431</code></td></tr>
+<tr><th>派单方 from</th><td><b></b></td></tr>
+<tr><th>接单方 to</th><td><b>打工牛牛</b></td></tr>
+<tr><th>主题 subject</th><td>台州未来一周天气预报</td></tr>
+<tr><th>优先级 priority</th><td>P1</td></tr>
+<tr><th>截止 deadline</th><td>2026-10-19T21:14:31+08:00</td></tr>
+<tr><th>输出格式</th><td>markdown</td></tr>
+<tr><th>状态 status</th><td>open</td></tr>
+<tr><th>创建 created_at</th><td>2026-10-19T17:14:31+08:00</td></tr>
+</table>
+<h2 style="border-left-color:#3ec98a">任务要求 goal</h2>
+<pre>查询台州（浙江省台州市，椒江区）未来一周（7天）天气预报。
+
+【必须包含】
+1. 逐日预报表格：日期 / 星期 / 天气现象 / 最高温 / 最低温 / 风力风向 / 降水概率
+2. 数据来源标注：每个数据点标注来源，查不到标❓，不许编造
+3. 出行提示：根据天气给出穿衣、出行、是否带伞的实用建议
+4. 一周趋势总结：温度走势、是否有明显降温/降雨过程
+
+【城市定位】
+台州，浙江省，坐标约 28.66°N, 121.42°E
+
+【输出格式】
+直接在对话中输出 Markdown 格式文本（不要生成文件），用表格呈现逐日数据，末尾附来源 URL 列表。
+
+【数据源建议】
+- 中国天气网 weather.com.cn
+- 中央气象台 nmc.cn
+- 浙江省气象台
+- 或权威第三方天气 API
+
+【质量要求】
+- 温度数据必须来自权威来源，不要用记忆里的数据
+- 不同来源数据有冲突时标注出来
+- 查不到的字段标❓，绝对不许编造</pre>
+<h2 style="border-left-color:#f0b429">原始 JSON</h2>
+<pre>{
+  &quot;version&quot;: &quot;1.0&quot;,
+  &quot;updated&quot;: &quot;2026-10-19T17:14:31+08:00&quot;,
+  &quot;conversations&quot;: [
+    {
+      &quot;id&quot;: &quot;conv_20261019_171431&quot;,
+      &quot;from_agent&quot;: &quot;牛牛&quot;,
+      &quot;to_agent&quot;: &quot;打工牛牛&quot;,
+      &quot;subject&quot;: &quot;台州未来一周天气预报&quot;,
+      &quot;goal&quot;: &quot;查询台州（浙江省台州市，椒江区）未来一周（7天）天气预报。\n\n【必须包含】\n1. 逐日预报表格：日期 / 星期 / 天气现象 / 最高温 / 最低温 / 风力风向 / 降水概率\n2. 数据来源标注：每个数据点标注来源，查不到标❓，不许编造\n3. 出行提示：根据天气给出穿衣、出行、是否带伞的实用建议\n4. 一周趋势总结：温度走势、是否有明显降温/降雨过程\n\n【城市定位】\n台州，浙江省，坐标约 28.66°N, 121.42°E\n\n【输出格式】\n直接在对话中输出 Markdown 格式文本（不要生成文件），用表格呈现逐日数据，末尾附来源 URL 列表。\n\n【数据源建议】\n- 中国天气网 weather.com.cn\n- 中央气象台 nmc.cn\n- 浙江省气象台\n- 或权威第三方天气 API\n\n【质量要求】\n- 温度数据必须来自权威来源，不要用记忆里的数据\n- 不同来源数据有冲突时标注出来\n- 查不到的字段标❓，绝对不许编造&quot;,
+      &quot;output_format&quot;: &quot;markdown&quot;,
+      &quot;deadline&quot;: &quot;2026-10-19T21:14:31+08:00&quot;,
+      &quot;priority&quot;: &quot;P1&quot;,
+      &quot;status&quot;: &quot;open&quot;,
+      &quot;created_at&quot;: &quot;2026-10-19T17:14:31+08:00&quot;,
+      &quot;assignee&quot;: &quot;打工牛牛&quot;,
+      &quot;mode&quot;: &quot;online&quot;
+    }
+  ],
+  &quot;messages&quot;: [],
+  &quot;updatedAt&quot;: &quot;2026-10-19T17:14:31+08:00&quot;
+}</pre>
+<div class="foot">牛牛 · 2026-10-19 17:14 · 仅含派单 JSON，不含归档明细</div>
+</div></body></html>
