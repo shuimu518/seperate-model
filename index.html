@@ -17,15 +17,15 @@ code{background:#0b1220;padding:1px 5px;border-radius:4px;font-size:13px;color:#
 .foot{color:#8fa3bf;font-size:12px;margin-top:26px}
 </style></head><body><div class="wrap">
 <h1>任务派单 · seperate_model.json</h1>
-<div class="sub">更新时间 2026-10-19T16:01:08+08:00 · 进行中会话 1 个 · 生成 2026-10-19 16:20</div>
-<h2>任务 1：台州明天天气查询</h2>
+<div class="sub">更新时间 2026-10-19T16:28:18+08:00 · 进行中会话 1 个 · 生成 2026-10-19 16:34</div>
+<h2>任务 1：欧洲本土房车制造企业调研 — 销量与市场份额</h2>
 <table>
-<tr><th>id</th><td><code>conv_20261019_161426</code></td></tr>
+<tr><th>id</th><td><code>conv_20261019_163354</code></td></tr>
 <tr><th>派单方 from</th><td><b>assistant</b></td></tr>
-<tr><th>接单方 to</th><td><b>扣普达</b></td></tr>
-<tr><th>主题 subject</th><td>台州明天天气查询</td></tr>
-<tr><th>优先级 priority</th><td>P2-高</td></tr>
-<tr><th>截止 deadline</th><td>2026-10-20 08:00</td></tr>
+<tr><th>接单方 to</th><td><b>打工牛牛</b></td></tr>
+<tr><th>主题 subject</th><td>欧洲本土房车制造企业调研 — 销量与市场份额</td></tr>
+<tr><th>优先级 priority</th><td>P1-紧急</td></tr>
+<tr><th>截止 deadline</th><td>2026-10-20 12:00</td></tr>
 <tr><th>输出格式</th><td></td></tr>
 <tr><th>状态 status</th><td>open</td></tr>
 <tr><th>创建 created_at</th><td></td></tr>
@@ -35,53 +35,83 @@ code{background:#0b1220;padding:1px 5px;border-radius:4px;font-size:13px;color:#
 <h2 style="border-left-color:#f0b429">原始 JSON</h2>
 <pre>{
   &quot;version&quot;: &quot;1.0&quot;,
-  &quot;updated&quot;: &quot;2026-10-19T16:01:08+08:00&quot;,
+  &quot;updated&quot;: &quot;2026-10-19T16:28:18+08:00&quot;,
   &quot;conversations&quot;: [
     {
-      &quot;id&quot;: &quot;conv_20261019_161426&quot;,
-      &quot;assignee&quot;: &quot;扣普达&quot;,
-      &quot;subject&quot;: &quot;台州明天天气查询&quot;,
+      &quot;id&quot;: &quot;conv_20261019_163354&quot;,
+      &quot;assignee&quot;: &quot;打工牛牛&quot;,
+      &quot;subject&quot;: &quot;欧洲本土房车制造企业调研 — 销量与市场份额&quot;,
       &quot;status&quot;: &quot;open&quot;,
       &quot;requirement&quot;: [
-        &quot;查询台州明天（2026-10-20，周二）的天气预报&quot;,
-        &quot;必须包含：&quot;,
-        &quot;  ① 白天最高温 / 夜间最低温（℃）&quot;,
-        &quot;  ② 天气状况（晴/多云/阴/雨等）&quot;,
-        &quot;  ③ 风向 + 风力等级&quot;,
-        &quot;  ④ 相对湿度&quot;,
-        &quot;  ⑤ 早晚温差&quot;,
-        &quot;  ⑥ 穿衣建议 / 出行建议&quot;,
-        &quot;数据来源要求：&quot;,
-        &quot;  - 至少 2 个权威渠道交叉验证（中国天气网 weather.com.cn、中央气象台 nmc.cn、浙江省气象台、墨迹天气等）&quot;,
-        &quot;  - 标注每个数据来源链接&quot;,
-        &quot;  - 如果不同渠道数据有出入，如实列出并说明差异原因&quot;,
-        &quot;输出格式：&quot;,
-        &quot;  - Markdown 表格（推荐）或清晰分段&quot;,
-        &quot;  - 结论 + 数据来源链接&quot;,
-        &quot;禁止事项：&quot;,
+        &quot;调研欧洲本土房车（Caravan/Motorhome）制造企业，聚焦以下内容：&quot;,
+        &quot;&quot;,
+        &quot;一、企业清单（必须覆盖主要国家）&quot;,
+        &quot;  - 德国：Hymer集团（含Eriba/Bürstner/LMC等子品牌）、Knaus Tabbert、Dethleffs、Burstner、Adria&quot;,
+        &quot;  - 法国：Trigano集团（含Challenger/Chausson/Rapido等）、Beneteau&quot;,
+        &quot;  - 英国：Swift Group（含Sterling/Sprite等）、Bailey of Bristol、Elddis、Coachman&quot;,
+        &quot;  - 意大利：Mobilvetta、Laika&quot;,
+        &quot;  - 荷兰：Bootman Caravans（如有）&quot;,
+        &quot;  - 北欧：Solifer（芬兰）、Polar（瑞典）&quot;,
+        &quot;  - 其他欧洲本土品牌（补充发现）&quot;,
+        &quot;&quot;,
+        &quot;二、每个企业/集团必须包含的数据&quot;,
+        &quot;  ① 企业全名 + 总部所在国家/城市&quot;,
+        &quot;  ② 旗下品牌/子品牌清单&quot;,
+        &quot;  ③ 年销量（单位：辆/台）— 最近一个完整年度（2025或2024）&quot;,
+        &quot;  ④ 市场份额占比（该国或欧洲整体）&quot;,
+        &quot;  ⑤ 主要产品线（拖挂式Caravan / 自行式Motorhome / 两者兼有）&quot;,
+        &quot;  ⑥ 简要背景（成立年份、员工规模、是否上市）&quot;,
+        &quot;&quot;,
+        &quot;三、行业汇总数据&quot;,
+        &quot;  - 欧洲房车市场总销量（2024/2025年度，拖挂+自行式分开统计）&quot;,
+        &quot;  - 各国市场份额排名（德国/法国/英国/北欧等）&quot;,
+        &quot;  - 拖挂式 vs 自行式占比&quot;,
+        &quot;  - Top 10 企业销量排行榜（表格）&quot;,
+        &quot;&quot;,
+        &quot;四、数据来源要求&quot;,
+        &quot;  - 至少 2 个权威渠道交叉验证&quot;,
+        &quot;  - 推荐来源：&quot;,
+        &quot;    · CIVD（德国房车工业协会）https://www.civd.de/&quot;,
+        &quot;    · ECF（欧洲房车联合会）&quot;,
+        &quot;    · NCC（英国国家房车委员会）https://www.thencc.org/&quot;,
+        &quot;    · Trigano/Hymer/Knaus Tabbert 上市公司年报&quot;,
+        &quot;    · Statista 房车销量统计&quot;,
+        &quot;    · CaravanSalon 杜塞尔多夫房车展官方数据&quot;,
+        &quot;  - 每个数据点标注来源链接&quot;,
+        &quot;  - 不同来源数据有出入时，如实列出并说明差异&quot;,
+        &quot;&quot;,
+        &quot;五、输出格式&quot;,
+        &quot;  - Markdown 文件&quot;,
+        &quot;  - 企业清单用表格（推荐）&quot;,
+        &quot;  - Top 10 排行榜用表格&quot;,
+        &quot;  - 结论前置：先给总销量和市场份额概览，再逐企业展开&quot;,
+        &quot;&quot;,
+        &quot;六、禁止事项&quot;,
         &quot;  - 禁止编造数据&quot;,
-        &quot;  - 禁止用过期数据代替明日预测&quot;,
-        &quot;  - 禁止\&quot;数据可能/大概\&quot;这类模糊表述&quot;
+        &quot;  - 禁止用北美/亚洲企业冒充欧洲本土企业&quot;,
+        &quot;  - 禁止用过期数据（2023年以前的标明\&quot;参考\&quot;）&quot;,
+        &quot;  - 禁止\&quot;大概/约/可能\&quot;这类模糊表述，数据必须具体到数字&quot;
       ],
       &quot;acceptance&quot;: [
-        &quot;温度数据必须明确到具体数字（不能只写\&quot;低温\&quot;\&quot;高温\&quot;）&quot;,
-        &quot;至少 2 个来源的链接可点开验证&quot;,
-        &quot;风向风力必须给出具体等级（如\&quot;东北风 3-4级\&quot;）&quot;,
-        &quot;如两地数据冲突，必须列出并解释&quot;,
-        &quot;结尾附一句综合出行/穿衣建议&quot;
+        &quot;至少覆盖 5 个主要欧洲国家的本土房车企业（德/法/英/意/北欧）&quot;,
+        &quot;每家企业必须有年销量数字和市场份额&quot;,
+        &quot;Top 10 排行榜必须含数字和来源&quot;,
+        &quot;行业总销量数据必须有年份标注&quot;,
+        &quot;所有数据可点击来源链接验证&quot;,
+        &quot;拖挂式(Caravan)和自行式(Motorhome)分开统计&quot;
       ],
-      &quot;priority&quot;: &quot;P2-高&quot;,
-      &quot;deadline&quot;: &quot;2026-10-20 08:00&quot;,
-      &quot;createdAt&quot;: &quot;2026-10-19T16:14:26+08:00&quot;,
-      &quot;updatedAt&quot;: &quot;2026-10-19T16:14:26+08:00&quot;,
+      &quot;priority&quot;: &quot;P1-紧急&quot;,
+      &quot;deadline&quot;: &quot;2026-10-20 12:00&quot;,
+      &quot;createdAt&quot;: &quot;2026-10-19T16:33:54+08:00&quot;,
+      &quot;updatedAt&quot;: &quot;2026-10-19T16:33:54+08:00&quot;,
       &quot;onlineDispatch&quot;: true,
       &quot;onlineUrl&quot;: &quot;https://shuimu518.github.io/seperate-model/task.html&quot;,
       &quot;dispatchedBy&quot;: &quot;assistant&quot;,
-      &quot;taskType&quot;: &quot;realtime&quot;
+      &quot;taskType&quot;: &quot;research&quot;
     }
   ],
   &quot;messages&quot;: [],
-  &quot;updatedAt&quot;: &quot;2026-10-19T16:15:22+08:00&quot;
+  &quot;updatedAt&quot;: &quot;2026-10-19T16:33:54+08:00&quot;
 }</pre>
-<div class="foot">牛牛 · 2026-10-19 16:20 · 仅含派单 JSON，不含归档明细</div>
+<div class="foot">牛牛 · 2026-10-19 16:34 · 仅含派单 JSON，不含归档明细</div>
 </div></body></html>
