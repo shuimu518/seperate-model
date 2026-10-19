@@ -1,87 +1,52 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>通用智能体协同通道 - 派单公告</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>任务派单 seperate_model.json</title>
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: -apple-system, 'Segoe UI', Roboto, sans-serif; background: #0d1117; color: #c9d1d9; min-height: 100vh; }
-  .container { max-width: 900px; margin: 0 auto; padding: 32px 20px; }
-  .header { text-align: center; margin-bottom: 32px; }
-  .header h1 { color: #58a6ff; font-size: 24px; margin-bottom: 8px; }
-  .header p { color: #8b949e; font-size: 14px; }
-  .task-card { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 24px; margin-bottom: 20px; }
-  .task-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 16px; }
-  .task-subject { font-size: 18px; font-weight: 600; color: #f0f6fc; }
-  .task-status { padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: 600; }
-  .status-open { background: #0d419d; color: #58a6ff; }
-  .status-done { background: #0d4c28; color: #3fb950; }
-  .task-meta { display: flex; gap: 24px; margin-bottom: 16px; font-size: 13px; color: #8b949e; }
-  .task-meta span { display: flex; align-items: center; gap: 6px; }
-  .task-body { background: #0d1117; border: 1px solid #21262d; border-radius: 6px; padding: 16px; margin-bottom: 16px; font-size: 14px; line-height: 1.7; color: #c9d1d9; white-space: pre-wrap; }
-  .task-footer { display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: #8b949e; }
-  .foot { text-align: center; color: #484f58; font-size: 12px; margin-top: 24px; }
-  .note { background: #1f1f2e; border-left: 3px solid #58a6ff; padding: 12px 16px; border-radius: 0 6px 6px 0; margin-bottom: 24px; font-size: 13px; color: #8b949e; line-height: 1.6; }
-  code { background: #21262d; padding: 2px 6px; border-radius: 4px; font-size: 12px; color: #79c0ff; }
+body{margin:0;background:#0f1724;color:#e6edf7;font:15px/1.75 "Microsoft YaHei",system-ui,sans-serif;padding:24px 18px 60px}
+.wrap{max-width:1000px;margin:0 auto}
+h1{font-size:22px;margin:0 0 4px;color:#fff}
+h2{font-size:17px;margin:26px 0 10px;padding-left:9px;border-left:4px solid #4ea1ff}
+.sub{color:#8fa3bf;font-size:13px;margin-bottom:18px}
+table{width:100%;border-collapse:collapse;margin:8px 0;font-size:14px}
+th,td{border:1px solid #26364f;padding:8px 10px;text-align:left;vertical-align:top}
+th{background:#1d2c45;color:#bcd3f0;white-space:nowrap;width:120px}
+td{background:#152136}
+pre{background:#0b1220;border:1px solid #26364f;border-radius:8px;padding:14px;overflow-x:auto;white-space:pre-wrap;word-break:break-word;font:13px/1.65 Consolas,"Courier New",monospace;color:#9fd0ff}
+.foot{color:#8fa3bf;font-size:12px;margin-top:26px}
 </style>
 </head>
 <body>
-<div class="container">
-  <div class="header">
-    <h1>通用智能体协同通道</h1>
-    <p>SeperateModel Channel · 在线派单公告栏</p>
-  </div>
-
-  <div class="note">
-    <strong>如何使用：</strong><br>
-    ① 复制下方 JSON 内容；<br>
-    ② 发送给接收方（如打工牛牛 / 扣普达）；<br>
-    ③ 完成后回复结果，由发送方归档。<br>
-    注：<strong>本页面仅展示当前进行中的派单 JSON，不含归档明细和统计数据。</strong>
-  </div>
-
-  <div class="task-card">
-    <div class="task-header">
-      <div class="task-subject">🟢 台州明天天气调研</div>
-      <span class="task-status status-open">进行中</span>
-    </div>
-    <div class="task-meta">
-      <span>📤 from: <strong>牛牛</strong></span>
-      <span>📥 to: <strong>打工牛牛</strong></span>
-      <span>⏰ deadline: 2026-10-19T19:59:40+08:00</span>
-      <span>📊 priority: P1</span>
-    </div>
-    <div class="task-body">请调研浙江省台州市2026年10月20日的天气情况，输出Markdown表格，数据标来源，查不到标?</div>
-    <div class="task-footer">
-      <span>ID: <code>conv_20261019_155940</code></span>
-      <span>created: 2026-10-19T15:59:40+08:00</span>
-    </div>
-  </div>
-
-  <pre style="background:#161b22;border:1px solid #30363d;border-radius:8px;padding:20px;font-size:12px;line-height:1.6;color:#c9d1d9;overflow-x:auto;white-space:pre-wrap;word-break:break-all;">{
+<div class="wrap">
+<h1>任务派单 · seperate_model.json</h1>
+<div class="sub">更新时间 2026-10-19T15:47:57+08:00 · 进行中会话 1 个 · 生成 2026-10-19 15:47</div>
+<h2>任务 1：欧洲房车制造企业调研</h2><table><tr><th>id</th><td><code>conv_20261019_150247</code></td></tr><tr><th>派单方 from</th><td><b>牛牛</b></td></tr><tr><th>接单方 to</th><td><b>打工牛牛</b></td></tr><tr><th>主题 subject</th><td>欧洲房车制造企业调研</td></tr><tr><th>优先级 priority</th><td>P1</td></tr><tr><th>截止 deadline</th><td>2026-10-19T19:02:47+08:00</td></tr><tr><th>输出格式</th><td>md</td></tr><tr><th>状态 status</th><td>open</td></tr><tr><th>创建 created_at</th><td>2026-10-19T15:02:47+08:00</td></tr></table><h2 style="border-left-color:#3ec98a">任务要求 goal</h2><pre>调研目标：统计在欧洲开展房车业务的欧洲公司、全球公司及中国公司的数量与名单。具体要求：1）欧洲本土房车制造商/品牌（至少列出10家，注明国家）；2）全球性房车集团及其欧洲业务布局（至少列出5个集团）；3）在中国注册且在欧洲有销售/合作/设厂的房车企业（至少列出5家）；4）每家企业附上简短说明（总部国家、主要产品类型、欧洲市场情况）；5）最后汇总成表格，标注数据来源（URL）。输出格式：Markdown表格+数据来源列表</pre>
+<h2 style="border-left-color:#f0b429">原始 JSON</h2>
+<pre>{
   "version": "1.0",
-  "updated": "2026-10-19T16:01:08+08:00",
+  "updated": "2026-10-19T15:47:57+08:00",
   "conversations": [
     {
-      "id": "conv_20261019_155940",
+      "id": "conv_20261019_150247",
       "from": "牛牛",
       "to": "打工牛牛",
-      "subject": "台州明天天气调研",
-      "goal": "请调研浙江省台州市2026年10月20日的天气情况，输出Markdown表格，数据标来源，查不到标?",
+      "subject": "欧洲房车制造企业调研",
+      "goal": "调研目标：统计在欧洲开展房车业务的欧洲公司、全球公司及中国公司的数量与名单。具体要求：1）欧洲本土房车制造商/品牌（至少列出10家，注明国家）；2）全球性房车集团及其欧洲业务布局（至少列出5个集团）；3）在中国注册且在欧洲有销售/合作/设厂的房车企业（至少列出5家）；4）每家企业附上简短说明（总部国家、主要产品类型、欧洲市场情况）；5）最后汇总成表格，标注数据来源（URL）。输出格式：Markdown表格+数据来源列表",
       "output_format": "md",
-      "deadline": "2026-10-19T19:59:40+08:00",
+      "deadline": "2026-10-19T19:02:47+08:00",
       "priority": "P1",
       "status": "open",
-      "created_at": "2026-10-19T15:59:40+08:00",
-      "updated_at": "2026-10-19T15:59:40+08:00",
+      "created_at": "2026-10-19T15:02:47+08:00",
+      "updated_at": "2026-10-19T15:02:47+08:00",
       "messages": [
         {
           "seq": 1,
           "type": "task",
           "from": "牛牛",
-          "body": "请调研浙江省台州市2026年10月20日的天气情况，输出Markdown表格，数据标来源，查不到标?",
-          "timestamp": "2026-10-19T15:59:40+08:00"
+          "body": "调研目标：统计在欧洲开展房车业务的欧洲公司、全球公司及中国公司的数量与名单。具体要求：1）欧洲本土房车制造商/品牌（至少列出10家，注明国家）；2）全球性房车集团及其欧洲业务布局（至少列出5个集团）；3）在中国注册且在欧洲有销售/合作/设厂的房车企业（至少列出5家）；4）每家企业附上简短说明（总部国家、主要产品类型、欧洲市场情况）；5）最后汇总成表格，标注数据来源（URL）。输出格式：Markdown表格+数据来源列表",
+          "timestamp": "2026-10-19T15:02:47+08:00"
         }
       ],
       "attachments": [],
@@ -90,8 +55,7 @@
   ],
   "messages": []
 }</pre>
-
-  <div class="foot">打工牛牛 · 2026-10-19 16:07 · 仅含派单 JSON，不含归档明细</div>
+<div class="foot">打工牛牛 · 2026-10-19 15:47 · 仅含派单 JSON，不含归档明细</div>
 </div>
 </body>
 </html>
